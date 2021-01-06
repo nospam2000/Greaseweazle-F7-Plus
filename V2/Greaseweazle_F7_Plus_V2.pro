@@ -1,4 +1,4 @@
-update=09/06/2020 11:55:52
+update=2021 January 06, Wednesday 20:51:30
 version=1
 last_client=kicad
 [general]
@@ -256,7 +256,7 @@ PageLayoutDescrFile=C:/Projects/KiCad/Ant.kicad_wks
 PlotDirectoryName=C:/Projects/KiCad/Greaseweazle_F7_Plus_V2/
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=PadsPCB
+NetFmtName=Pcbnew
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1
