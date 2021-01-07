@@ -1,0 +1,200 @@
+
+(rules PCB Greaseweazle_F7_Plus_V2
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout on)
+    (eu.mihosoft.freerouting.autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.4)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear -0.1 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_600:300_um"
+    (shape
+      (circle F.Cu 600.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 600.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_800:500_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1200:800_um"
+    (shape
+      (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1800:1500_um"
+    (shape
+      (circle F.Cu 1800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_1200:800_um" "Via[0-1]_1200:800_um" default
+  )
+  (via 
+    "Via[0-1]_800:500_um" "Via[0-1]_800:500_um" default
+  )
+  (via 
+    "Via[0-1]_1200:800_um-kicad_default" "Via[0-1]_1200:800_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:500_um-kicad_default" "Via[0-1]_800:500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1200:800_um-HighPower" "Via[0-1]_1200:800_um" HighPower
+  )
+  (via 
+    "Via[0-1]_800:500_um-HighPower" "Via[0-1]_800:500_um" HighPower
+  )
+  (via 
+    "Via[0-1]_1200:800_um-Power" "Via[0-1]_1200:800_um" Power
+  )
+  (via 
+    "Via[0-1]_800:500_um-Power" "Via[0-1]_800:500_um" Power
+  )
+  (via 
+    "Via[0-1]_1800:1500_um" "Via[0-1]_1800:1500_um" default
+  )
+  (via 
+    "Via[0-1]_1800:1500_um-kicad_default" "Via[0-1]_1800:1500_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:300_um-HighPower" "Via[0-1]_600:300_um" HighPower
+  )
+  (via 
+    "Via[0-1]_1800:1500_um-HighPower" "Via[0-1]_1800:1500_um" HighPower
+  )
+  (via 
+    "Via[0-1]_600:300_um-Power" "Via[0-1]_600:300_um" Power
+  )
+  (via 
+    "Via[0-1]_1800:1500_um-Power" "Via[0-1]_1800:1500_um" Power
+  )
+  (via 
+    "Via[0-1]_600:300_um" "Via[0-1]_600:300_um" default
+  )
+  (via 
+    "Via[0-1]_600:300_um-kicad_default" "Via[0-1]_600:300_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_600:300_um-Thick" "Via[0-1]_600:300_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" default
+  )
+  (via_rule
+    HighPower "Via[0-1]_800:500_um-HighPower"
+  )
+  (via_rule
+    Power "Via[0-1]_600:300_um-Power"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_600:300_um-kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(D1-Pad2)" /ACT "Net-(D2-Pad2)" /~DS0~ /~M1~ /~INDEX~ /~M0~ /~DS1~
+    /~DIR~ /~STEP~ "/~WR_GATE~" "/~TRK_00~" "/~WR_DAT~" "/~WR_PROT~" "/~RD_DAT~" /~SIDE~
+    /VCAP /~RST~ /BOOT /SWCLK /SWDIO /RX /TX "/~SIDE_5V~"
+    "/~WR_GATE_5V~" "/~WR_DAT_5V~" "/~STEP_5V~" "/~DIR_5V~" "/~M1_5V~" "/~DS0_5V~" "/~DS1_5V~" "/~M0_5V~"
+    "Net-(C1-Pad2)" "Net-(J6-Pad1)" "/USB_DIN+" "/USB_DIN-" "/OSC_IN" "/OSC_OUT" "Net-(J9-Pad3)" "Net-(J9-Pad1)"
+    "Net-(J10-Pad1)" /FB "/~PIN6_5V~" "/~PIN4_5V~" "/~PIN2_5V~" /~PIN4~ /~PIN6~ /~PIN2~
+    "Net-(U4-Pad1)" "Net-(U4-Pad12)" "Net-(U1-Pad5)" "Net-(U10-Pad2)" "/USB_D-" "/USB_D+"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class HighPower
+    +12V "/5V_REG" "/12V_conn"
+    (clearance_class HighPower)
+    (via_rule HighPower)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    GND +3V3 +5V "/USB_VBUS" /SW
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)

@@ -1,0 +1,21 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# NarrowPowerAdapter
+#
+DEF NarrowPowerAdapter U 0 40 Y Y 1 F N
+F0 "U" 450 100 50 H V C CNN
+F1 "NarrowPowerAdapter" 0 100 50 H V C CNN
+F2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" -50 200 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ NarrowPowerAdapter*
+$ENDFPLIST
+DRAW
+S -350 50 350 -50 0 1 0 f
+X Normal 1 -450 0 100 R 50 50 0 0 W
+X Narrow 2 450 0 100 L 50 50 0 0 O
+ENDDRAW
+ENDDEF
+#
+#End Library

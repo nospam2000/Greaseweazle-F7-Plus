@@ -174,63 +174,6 @@ Wire Wire Line
 Wire Wire Line
 	2500 6800 2500 6900
 Connection ~ 2500 6900
-$Comp
-L Device:C_Small C10
-U 1 1 5EB0C2F3
-P 3200 5900
-F 0 "C10" H 3292 5946 50  0000 L CNN
-F 1 "10U" H 3292 5855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3200 5900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf" H 3200 5900 50  0001 C CNN
-F 4 "C15850" H 3200 5900 50  0001 C CNN "LCSC"
-F 5 "CL21A106KAYNNNE" H 3200 5900 50  0001 C CNN "MFR.Part"
-	1    3200 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C11
-U 1 1 5EB0CFA1
-P 3700 5900
-F 0 "C11" H 3792 5946 50  0000 L CNN
-F 1 "1U0" H 3792 5855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3700 5900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf" H 3700 5900 50  0001 C CNN
-F 4 "C52923" H 3700 5900 50  0001 C CNN "LCSC"
-F 5 "CL05A105KA5NQNC" H 3700 5900 50  0001 C CNN "MFR.Part"
-	1    3700 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C12
-U 1 1 5EB0F87D
-P 4100 5900
-F 0 "C12" H 4192 5946 50  0000 L CNN
-F 1 "100N" H 4192 5855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4100 5900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf" H 4100 5900 50  0001 C CNN
-F 4 "C1525" H 4100 5900 50  0001 C CNN "LCSC"
-F 5 "CL05B104KO5NNNC" H 4100 5900 50  0001 C CNN "MFR.Part"
-	1    4100 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 5700 4100 5800
-Wire Wire Line
-	4100 5700 3700 5700
-Wire Wire Line
-	3700 5700 3700 5800
-Wire Wire Line
-	3200 5800 3200 5600
-Wire Wire Line
-	3200 6000 3200 6100
-Wire Wire Line
-	3200 6100 3700 6100
-Wire Wire Line
-	3700 6100 3700 6000
-Wire Wire Line
-	3700 6100 4100 6100
-Wire Wire Line
-	4100 6100 4100 6000
 Connection ~ 2000 6900
 $Comp
 L power:GND #PWR021
@@ -256,54 +199,12 @@ F 5 "0402CG270J500NTN" H 2200 6900 50  0001 C CNN "MFR.Part"
 	1    2200 6900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2800 6200 2800 6100
-$Comp
-L power:GND #PWR020
-U 1 1 5EB1A70B
-P 2800 6200
-F 0 "#PWR020" H 2800 5950 50  0001 C CNN
-F 1 "GND" H 2800 6050 50  0000 C CNN
-F 2 "" H 2800 6200 50  0001 C CNN
-F 3 "" H 2800 6200 50  0001 C CNN
-	1    2800 6200
-	1    0    0    -1  
-$EndComp
-Connection ~ 3200 6100
-Text Label 3600 5600 0    50   ~ 0
-VCAP
 Text Label 3600 6500 0    50   ~ 0
 OSC_IN
 Text Label 3600 6600 0    50   ~ 0
 OSC_OUT
-Text Label 2300 5200 0    50   ~ 0
-~RST~
-Text Label 3600 5400 0    50   ~ 0
-BOOT
 Wire Wire Line
 	3000 6900 3000 6600
-$Comp
-L Device:C_Small C9
-U 1 1 5EB3B6DA
-P 2800 5900
-F 0 "C9" H 2892 5946 50  0000 L CNN
-F 1 "100N" H 2892 5855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2800 5900 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf" H 2800 5900 50  0001 C CNN
-F 4 "C1525" H 2800 5900 50  0001 C CNN "LCSC"
-F 5 "CL05B104KO5NNNC" H 2800 5900 50  0001 C CNN "MFR.Part"
-	1    2800 5900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 6000 2800 6100
-Wire Wire Line
-	2800 6100 3200 6100
-Connection ~ 2800 6100
-Wire Wire Line
-	2800 5800 2800 5200
-Wire Wire Line
-	2800 5200 2300 5200
 Text Label 10300 2400 2    50   ~ 0
 USB_D-
 Text Label 10300 1200 2    50   ~ 0
@@ -686,19 +587,6 @@ Floppy Data
 Text Notes 3350 600  0    50   ~ 10
 5V Regulator
 $Comp
-L Device:C_Small C3
-U 1 1 5EE9A427
-P 2800 1300
-F 0 "C3" H 2892 1346 50  0000 L CNN
-F 1 "10U" H 2892 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2800 1300 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf" H 2800 1300 50  0001 C CNN
-F 4 "C15850" H 2800 1300 50  0001 C CNN "LCSC"
-F 5 "CL21A106KAYNNNE" H 2800 1300 50  0001 C CNN "MFR.Part"
-	1    2800 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C8
 U 1 1 5EE9AD0C
 P 4200 2900
@@ -712,21 +600,7 @@ F 5 "CL05A105KA5NQNC" H 4200 2900 50  0001 C CNN "MFR.Part"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 1000 3100 1000
-Wire Wire Line
-	3100 1000 3100 1200
-Wire Wire Line
 	3100 1200 3200 1200
-Wire Wire Line
-	3100 1000 2800 1000
-Wire Wire Line
-	2800 1000 2800 1200
-Connection ~ 3100 1000
-Connection ~ 2800 1000
-Wire Wire Line
-	2800 1400 2800 1600
-Wire Wire Line
-	2800 1600 3400 1600
 Wire Wire Line
 	3400 1600 3400 1675
 $Comp
@@ -742,11 +616,7 @@ F 3 "" H 3400 1675 50  0001 C CNN
 $EndComp
 Connection ~ 3400 1600
 Connection ~ 13950 2200
-Connection ~ 2800 5200
-Connection ~ 4100 5700
 Connection ~ 2500 6500
-Wire Wire Line
-	3600 5400 4400 5400
 Wire Wire Line
 	2500 6500 4400 6500
 Wire Wire Line
@@ -767,10 +637,6 @@ Text Label 6500 6100 2    50   ~ 0
 TX
 Wire Wire Line
 	5700 6100 6500 6100
-Wire Wire Line
-	4400 5200 2800 5200
-Wire Wire Line
-	4400 5700 4100 5700
 $Comp
 L power:GND #PWR024
 U 1 1 5EADD8DF
@@ -850,20 +716,7 @@ NoConn ~ 4400 7200
 NoConn ~ 4400 7100
 NoConn ~ 4400 7000
 NoConn ~ 4400 8400
-$Comp
-L power:+3V3 #PWR018
-U 1 1 5EAC8A6D
-P 4900 4800
-F 0 "#PWR018" H 4900 4650 50  0001 C CNN
-F 1 "+3V3" H 4915 4973 50  0000 C CNN
-F 2 "" H 4900 4800 50  0001 C CNN
-F 3 "" H 4900 4800 50  0001 C CNN
-	1    4900 4800
-	1    0    0    -1  
-$EndComp
 Connection ~ 4900 4900
-Wire Wire Line
-	4900 4800 4900 4900
 Connection ~ 5200 4900
 Wire Wire Line
 	5300 4900 5300 5000
@@ -886,19 +739,6 @@ Wire Wire Line
 Wire Wire Line
 	4900 5000 4900 4900
 Connection ~ 4900 8700
-Wire Wire Line
-	4900 8800 4900 8700
-$Comp
-L power:GND #PWR026
-U 1 1 5EAC4944
-P 4900 8800
-F 0 "#PWR026" H 4900 8550 50  0001 C CNN
-F 1 "GND" H 4900 8650 50  0000 C CNN
-F 2 "" H 4900 8800 50  0001 C CNN
-F 3 "" H 4900 8800 50  0001 C CNN
-	1    4900 8800
-	1    0    0    -1  
-$EndComp
 Connection ~ 5200 8700
 Wire Wire Line
 	5300 8700 5200 8700
@@ -1572,31 +1412,9 @@ F 5 "TPS562201DDCR" H 3600 1100 50  0001 C CNN "MFR.Part"
 	1    3600 1100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C_Small C2
-U 1 1 5ED187B1
-P 2500 1300
-F 0 "C2" H 2592 1346 50  0000 L CNN
-F 1 "10U" H 2592 1255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2500 1300 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf" H 2500 1300 50  0001 C CNN
-F 4 "C15850" H 2500 1300 50  0001 C CNN "LCSC"
-F 5 "CL21A106KAYNNNE" H 2500 1300 50  0001 C CNN "MFR.Part"
-	1    2500 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 1200 2500 1000
 Wire Wire Line
 	2200 1000 2500 1000
 Connection ~ 2500 1000
-Wire Wire Line
-	2500 1000 2800 1000
-Wire Wire Line
-	2500 1400 2500 1600
-Wire Wire Line
-	2500 1600 2800 1600
-Connection ~ 2800 1600
 $Comp
 L Device:C_Small C1
 U 1 1 5ED90A60
@@ -1709,8 +1527,6 @@ Wire Wire Line
 	1400 1600 1700 1600
 Wire Wire Line
 	1700 1600 1700 1300
-Wire Wire Line
-	1700 1600 2500 1600
 Connection ~ 1700 1600
 Connection ~ 2500 1600
 Connection ~ 2200 1000
@@ -1883,11 +1699,11 @@ L Power_Protection:USBLC6-2SC6 U3
 U 1 1 5EBB243D
 P 9100 1800
 F 0 "U3" V 9450 2150 50  0000 L CNN
-F 1 "USBLC6-2SC6" V 9350 2150 50  0000 L CNN
+F 1 "TPUSBLC6-2SC6" V 9350 2150 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8350 2200 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/STMicroelectronics-USBLC6-2SC6_C7519.pdf" H 9300 2150 50  0001 C CNN
-F 4 "C7519" H 9100 1800 50  0001 C CNN "LCSC"
-F 5 "USBLC6-2SC6" H 9100 1800 50  0001 C CNN "MFR.Part"
+F 3 "https://datasheet.lcsc.com/szlcsc/2005211235_TECH-PUBLIC-TPUSBLC6-2SC6_C558442.pdf" H 9300 2150 50  0001 C CNN
+F 4 "C558442" H 9100 1800 50  0001 C CNN "LCSC"
+F 5 "TPUSBLC6-2SC6" H 9100 1800 50  0001 C CNN "MFR.Part"
 	1    9100 1800
 	0    1    -1   0   
 $EndComp
@@ -1896,13 +1712,7 @@ Wire Wire Line
 Wire Wire Line
 	8000 1200 8300 1200
 Wire Wire Line
-	9000 1200 9000 1300
-Wire Wire Line
-	9200 1300 9200 1200
-Wire Wire Line
 	9200 1200 10300 1200
-Wire Wire Line
-	9200 2300 9200 2400
 Wire Wire Line
 	9200 2400 10300 2400
 Wire Wire Line
@@ -1918,8 +1728,6 @@ Connection ~ 8300 1200
 Wire Wire Line
 	8300 1200 9000 1200
 Wire Wire Line
-	9000 2750 9000 2300
-Wire Wire Line
 	8000 2750 8400 2750
 Wire Wire Line
 	8000 1300 8400 1300
@@ -1928,13 +1736,9 @@ Wire Wire Line
 Connection ~ 8400 2750
 Wire Wire Line
 	8400 2750 9000 2750
-Wire Wire Line
-	8600 1800 7700 1800
 Connection ~ 7700 1800
 Wire Wire Line
 	7700 1800 7700 1900
-Wire Wire Line
-	9600 1800 9700 1800
 Wire Wire Line
 	9700 1800 9700 1000
 Connection ~ 9700 1000
@@ -1968,12 +1772,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0104
 U 1 1 5F1CE124
-P 4200 8200
-F 0 "#PWR0104" H 4200 7950 50  0001 C CNN
-F 1 "GND" V 4200 8000 50  0000 C CNN
-F 2 "" H 4200 8200 50  0001 C CNN
-F 3 "" H 4200 8200 50  0001 C CNN
-	1    4200 8200
+P 3300 8200
+F 0 "#PWR0104" H 3300 7950 50  0001 C CNN
+F 1 "GND" V 3300 8000 50  0000 C CNN
+F 2 "" H 3300 8200 50  0001 C CNN
+F 3 "" H 3300 8200 50  0001 C CNN
+	1    3300 8200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -2010,7 +1814,7 @@ $EndComp
 Text Notes 12400 4700 0    50   ~ 10
 LEDs
 NoConn ~ 5700 7800
-Text Notes 3450 8550 0    50   ~ 0
+Text Notes 3250 8500 0    50   ~ 0
 PC15:13 used for ID2:0
 Text Label 13050 7100 0    50   ~ 0
 ~PIN4_5V~
@@ -2316,22 +2120,6 @@ Wire Wire Line
 Wire Wire Line
 	13050 7000 14500 7000
 Wire Wire Line
-	3200 5600 4400 5600
-Wire Wire Line
-	3600 5700 3700 5700
-$Comp
-L power:+3V3 #PWR0107
-U 1 1 5F877E0F
-P 3600 5700
-F 0 "#PWR0107" H 3600 5550 50  0001 C CNN
-F 1 "+3V3" V 3600 5950 50  0000 C CNN
-F 2 "" H 3600 5700 50  0001 C CNN
-F 3 "" H 3600 5700 50  0001 C CNN
-	1    3600 5700
-	0    -1   -1   0   
-$EndComp
-Connection ~ 3700 5700
-Wire Wire Line
 	4300 8200 4300 8300
 Wire Wire Line
 	4300 8300 4400 8300
@@ -2351,7 +2139,6 @@ F 5 "CL05A105KA5NQNC" H 2800 2900 50  0001 C CNN "MFR.Part"
 	1    2800 2900
 	1    0    0    -1  
 $EndComp
-Connection ~ 3700 6100
 Text Label 13050 7000 0    50   ~ 0
 ~PIN2_5V~
 $Comp
@@ -2530,4 +2317,274 @@ F 3 "~" H 12700 8450 50  0001 C CNN
 	1    12700 8450
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5FFAACD2
+P 4000 4900
+F 0 "#PWR0108" H 4000 4750 50  0001 C CNN
+F 1 "+3V3" H 4015 5073 50  0000 C CNN
+F 2 "" H 4000 4900 50  0001 C CNN
+F 3 "" H 4000 4900 50  0001 C CNN
+	1    4000 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L greaseweazle:NarrowPowerAdapter U8
+U 1 1 5FFAA123
+P 4450 4900
+F 0 "U8" H 4450 5125 50  0000 C CNN
+F 1 "NarrowPowerAdapter" H 4450 5034 50  0000 C CNN
+F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 4400 5100 50  0001 C CNN
+F 3 "" H 4450 4900 50  0001 C CNN
+	1    4450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L greaseweazle:NarrowPowerAdapter U7
+U 1 1 5FFCF92A
+P 3750 8200
+F 0 "U7" H 3750 8425 50  0000 C CNN
+F 1 "NarrowPowerAdapter" H 3750 8334 50  0000 C CNN
+F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 3700 8400 50  0001 C CNN
+F 3 "" H 3750 8200 50  0001 C CNN
+	1    3750 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 8300 4300 8700
+Wire Wire Line
+	4300 8700 4900 8700
+Connection ~ 4300 8300
+$Comp
+L Mechanical:MountingHole H5
+U 1 1 601C200E
+P 7600 9950
+F 0 "H5" H 7700 9996 50  0000 L CNN
+F 1 "ToolHole" H 7700 9905 50  0000 L CNN
+F 2 "greaseweazle:ToolingHole_1.152mm" H 7600 9950 50  0001 C CNN
+F 3 "~" H 7600 9950 50  0001 C CNN
+	1    7600 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H6
+U 1 1 601C251A
+P 7600 10250
+F 0 "H6" H 7700 10296 50  0000 L CNN
+F 1 "ToolHole" H 7700 10205 50  0000 L CNN
+F 2 "greaseweazle:ToolingHole_1.152mm" H 7600 10250 50  0001 C CNN
+F 3 "~" H 7600 10250 50  0001 C CNN
+	1    7600 10250
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 1600
+Wire Wire Line
+	2500 1600 2800 1600
+Wire Wire Line
+	2800 1600 3400 1600
+Connection ~ 2800 1000
+Wire Wire Line
+	2500 1000 2800 1000
+Wire Wire Line
+	1700 1600 2500 1600
+Wire Wire Line
+	2500 1400 2500 1600
+Wire Wire Line
+	2500 1200 2500 1000
+$Comp
+L Device:C_Small C2
+U 1 1 5ED187B1
+P 2500 1300
+F 0 "C2" H 2592 1346 50  0000 L CNN
+F 1 "10U" H 2592 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2500 1300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf" H 2500 1300 50  0001 C CNN
+F 4 "C15850" H 2500 1300 50  0001 C CNN "LCSC"
+F 5 "CL21A106KAYNNNE" H 2500 1300 50  0001 C CNN "MFR.Part"
+	1    2500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1400 2800 1600
+Wire Wire Line
+	2800 1000 2800 1200
+$Comp
+L Device:C_Small C3
+U 1 1 5EE9A427
+P 2800 1300
+F 0 "C3" H 2892 1346 50  0000 L CNN
+F 1 "10U" H 2892 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2800 1300 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf" H 2800 1300 50  0001 C CNN
+F 4 "C15850" H 2800 1300 50  0001 C CNN "LCSC"
+F 5 "CL21A106KAYNNNE" H 2800 1300 50  0001 C CNN "MFR.Part"
+	1    2800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L greaseweazle:NarrowPowerAdapter U9
+U 1 1 6025FD3B
+P 2650 1950
+F 0 "U9" H 2650 2175 50  0000 C CNN
+F 1 "NarrowPowerAdapter" H 2650 2084 50  0000 C CNN
+F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 2600 2150 50  0001 C CNN
+F 3 "" H 2650 1950 50  0001 C CNN
+	1    2650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1000 3200 1000
+Wire Wire Line
+	3100 1200 3100 1950
+Wire Wire Line
+	2200 1950 2200 1000
+$Comp
+L greaseweazle:NarrowPowerAdapter U10
+U 1 1 602F8932
+P 3950 5700
+F 0 "U10" H 3950 5925 50  0000 C CNN
+F 1 "NarrowPowerAdapter" H 3950 5834 50  0000 C CNN
+F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 3900 5900 50  0001 C CNN
+F 3 "" H 3950 5700 50  0001 C CNN
+	1    3950 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C10
+U 1 1 5EB0C2F3
+P 2300 5900
+F 0 "C10" H 2392 5946 50  0000 L CNN
+F 1 "10U" H 2392 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2300 5900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL21A106KAYNNNE_C15850.pdf" H 2300 5900 50  0001 C CNN
+F 4 "C15850" H 2300 5900 50  0001 C CNN "LCSC"
+F 5 "CL21A106KAYNNNE" H 2300 5900 50  0001 C CNN "MFR.Part"
+	1    2300 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C11
+U 1 1 5EB0CFA1
+P 2800 5900
+F 0 "C11" H 2892 5946 50  0000 L CNN
+F 1 "1U0" H 2892 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2800 5900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf" H 2800 5900 50  0001 C CNN
+F 4 "C52923" H 2800 5900 50  0001 C CNN "LCSC"
+F 5 "CL05A105KA5NQNC" H 2800 5900 50  0001 C CNN "MFR.Part"
+	1    2800 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C12
+U 1 1 5EB0F87D
+P 3200 5900
+F 0 "C12" H 3292 5946 50  0000 L CNN
+F 1 "100N" H 3292 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3200 5900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf" H 3200 5900 50  0001 C CNN
+F 4 "C1525" H 3200 5900 50  0001 C CNN "LCSC"
+F 5 "CL05B104KO5NNNC" H 3200 5900 50  0001 C CNN "MFR.Part"
+	1    3200 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5700 3200 5800
+Wire Wire Line
+	3200 5700 2800 5700
+Wire Wire Line
+	2800 5700 2800 5800
+Wire Wire Line
+	2300 5800 2300 5600
+Wire Wire Line
+	2300 6000 2300 6100
+Wire Wire Line
+	2300 6100 2800 6100
+Wire Wire Line
+	2800 6100 2800 6000
+Wire Wire Line
+	2800 6100 3200 6100
+Wire Wire Line
+	3200 6100 3200 6000
+Wire Wire Line
+	1900 6200 1900 6100
+$Comp
+L power:GND #PWR020
+U 1 1 5EB1A70B
+P 1900 6200
+F 0 "#PWR020" H 1900 5950 50  0001 C CNN
+F 1 "GND" H 1900 6050 50  0000 C CNN
+F 2 "" H 1900 6200 50  0001 C CNN
+F 3 "" H 1900 6200 50  0001 C CNN
+	1    1900 6200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 6100
+Text Label 2700 5600 0    50   ~ 0
+VCAP
+Text Label 1400 5200 0    50   ~ 0
+~RST~
+Text Label 3600 5400 0    50   ~ 0
+BOOT
+$Comp
+L Device:C_Small C9
+U 1 1 5EB3B6DA
+P 1900 5900
+F 0 "C9" H 1992 5946 50  0000 L CNN
+F 1 "100N" H 1992 5855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1900 5900 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf" H 1900 5900 50  0001 C CNN
+F 4 "C1525" H 1900 5900 50  0001 C CNN "LCSC"
+F 5 "CL05B104KO5NNNC" H 1900 5900 50  0001 C CNN "MFR.Part"
+	1    1900 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 6000 1900 6100
+Wire Wire Line
+	1900 6100 2300 6100
+Connection ~ 1900 6100
+Wire Wire Line
+	1900 5800 1900 5200
+Wire Wire Line
+	1900 5200 1400 5200
+Connection ~ 1900 5200
+Wire Wire Line
+	3600 5400 4400 5400
+Wire Wire Line
+	2700 5700 2800 5700
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 5F877E0F
+P 2700 5700
+F 0 "#PWR0107" H 2700 5550 50  0001 C CNN
+F 1 "+3V3" V 2700 5950 50  0000 C CNN
+F 2 "" H 2700 5700 50  0001 C CNN
+F 3 "" H 2700 5700 50  0001 C CNN
+	1    2700 5700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2800 5700
+Connection ~ 2800 6100
+Wire Wire Line
+	1900 5200 4400 5200
+Wire Wire Line
+	2300 5600 4400 5600
+Wire Wire Line
+	3200 5700 3500 5700
+Connection ~ 3200 5700
+Wire Wire Line
+	7700 1800 8700 1800
+Wire Wire Line
+	9500 1800 9700 1800
+Wire Wire Line
+	9000 2200 9000 2750
+Wire Wire Line
+	9200 2200 9200 2400
+Wire Wire Line
+	9000 1200 9000 1400
+Wire Wire Line
+	9200 1200 9200 1400
+Text Label 1200 1000 0    50   ~ 0
+12V_conn
 $EndSCHEMATC
