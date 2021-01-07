@@ -20,7 +20,7 @@ enc = 'utf-8'
 # additional actions could be defined, e.g. for the position
 transformations = [
 	#{'conditions': [{'field': 'Ref', 'pattern': re.compile("^U\d+$")}], 'rotOffset': -90},
-	{'conditions': [{'field': 'Ref', 'pattern': re.compile("^(U1|U2|Q1)$")}], 'rotOffset': 180},
+	{'conditions': [{'field': 'Ref', 'pattern': re.compile("^(U1|U2|U3|Q1)$")}], 'rotOffset': 180},
 	{'conditions': [{'field': 'Ref', 'pattern': re.compile("^(U5|U6)$")}], 'rotOffset': -90},
 	# {'conditions': [{'field': 'LCSC', 'pattern': re.compile("^(C477988|C7809|C184582|C6060)$")}], 'rotOffset': -90} # TODO: field LCSC no available in normal export
 ]
