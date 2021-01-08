@@ -640,42 +640,42 @@ Wire Wire Line
 $Comp
 L power:GND #PWR024
 U 1 1 5EADD8DF
-P 2500 8200
-F 0 "#PWR024" H 2500 7950 50  0001 C CNN
-F 1 "GND" H 2500 8050 50  0000 C CNN
-F 2 "" H 2500 8200 50  0001 C CNN
-F 3 "" H 2500 8200 50  0001 C CNN
-	1    2500 8200
+P 2500 8050
+F 0 "#PWR024" H 2500 7800 50  0001 C CNN
+F 1 "GND" H 2500 7900 50  0000 C CNN
+F 2 "" H 2500 8050 50  0001 C CNN
+F 3 "" H 2500 8050 50  0001 C CNN
+	1    2500 8050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 8100 2500 8200
+	2500 7950 2500 8050
 Wire Wire Line
-	2500 7800 2500 7900
+	2500 7650 2500 7750
 $Comp
 L Device:R_Small R9
 U 1 1 5EADBBEF
-P 2500 7700
-F 0 "R9" H 2559 7746 50  0000 L CNN
-F 1 "330R" H 2559 7655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2500 7700 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F3300T5E_C17630.pdf" H 2500 7700 50  0001 C CNN
-F 4 "C17630" H 2500 7700 50  0001 C CNN "LCSC"
-F 5 "0805W8F3300T5E" H 2500 7700 50  0001 C CNN "MFR.Part"
-	1    2500 7700
+P 2500 7550
+F 0 "R9" H 2559 7596 50  0000 L CNN
+F 1 "330R" H 2559 7505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2500 7550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F3300T5E_C17630.pdf" H 2500 7550 50  0001 C CNN
+F 4 "C17630" H 2500 7550 50  0001 C CNN "LCSC"
+F 5 "0805W8F3300T5E" H 2500 7550 50  0001 C CNN "MFR.Part"
+	1    2500 7550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED_Small D1
 U 1 1 5EADBBE9
-P 2500 8000
-F 0 "D1" V 2546 7932 50  0000 R CNN
-F 1 "RED" V 2455 7932 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 2500 8000 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Hubei-KENTO-Elec-KT-0603R_C2286.pdf" V 2500 8000 50  0001 C CNN
-F 4 "C2286" H 2500 8000 50  0001 C CNN "LCSC"
-F 5 "KT-0603R" H 2500 8000 50  0001 C CNN "MFR.Part"
-	1    2500 8000
+P 2500 7850
+F 0 "D1" V 2546 7782 50  0000 R CNN
+F 1 "RED" V 2455 7782 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 2500 7850 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Hubei-KENTO-Elec-KT-0603R_C2286.pdf" V 2500 7850 50  0001 C CNN
+F 4 "C2286" H 2500 7850 50  0001 C CNN "LCSC"
+F 5 "KT-0603R" H 2500 7850 50  0001 C CNN "MFR.Part"
+	1    2500 7850
 	0    -1   -1   0   
 $EndComp
 Text Label 7400 8200 2    50   ~ 0
@@ -716,50 +716,6 @@ NoConn ~ 4400 7200
 NoConn ~ 4400 7100
 NoConn ~ 4400 7000
 NoConn ~ 4400 8400
-Connection ~ 4900 4900
-Connection ~ 5200 4900
-Wire Wire Line
-	5300 4900 5300 5000
-Wire Wire Line
-	5200 4900 5300 4900
-Connection ~ 5100 4900
-Wire Wire Line
-	5200 4900 5200 5000
-Wire Wire Line
-	5100 4900 5200 4900
-Connection ~ 5000 4900
-Wire Wire Line
-	5100 4900 5100 5000
-Wire Wire Line
-	5000 4900 5100 4900
-Wire Wire Line
-	5000 4900 5000 5000
-Wire Wire Line
-	4900 4900 5000 4900
-Wire Wire Line
-	4900 5000 4900 4900
-Connection ~ 4900 8700
-Connection ~ 5200 8700
-Wire Wire Line
-	5300 8700 5200 8700
-Wire Wire Line
-	5300 8600 5300 8700
-Connection ~ 5100 8700
-Wire Wire Line
-	5200 8700 5100 8700
-Wire Wire Line
-	5200 8600 5200 8700
-Connection ~ 5000 8700
-Wire Wire Line
-	5100 8700 5000 8700
-Wire Wire Line
-	5100 8600 5100 8700
-Wire Wire Line
-	5000 8700 5000 8600
-Wire Wire Line
-	4900 8700 5000 8700
-Wire Wire Line
-	4900 8600 4900 8700
 Text Label 6500 8000 2    50   ~ 0
 ~DS0~
 Wire Wire Line
@@ -1028,16 +984,16 @@ $EndComp
 $Comp
 L power:+3V3 #PWR022
 U 1 1 5EADBBF5
-P 2500 7500
-F 0 "#PWR022" H 2500 7350 50  0001 C CNN
-F 1 "+3V3" H 2515 7673 50  0000 C CNN
-F 2 "" H 2500 7500 50  0001 C CNN
-F 3 "" H 2500 7500 50  0001 C CNN
-	1    2500 7500
+P 2500 7350
+F 0 "#PWR022" H 2500 7200 50  0001 C CNN
+F 1 "+3V3" H 2515 7523 50  0000 C CNN
+F 2 "" H 2500 7350 50  0001 C CNN
+F 3 "" H 2500 7350 50  0001 C CNN
+	1    2500 7350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 7500 2500 7600
+	2500 7350 2500 7450
 Wire Wire Line
 	9550 7200 10350 7200
 Text Label 10350 7200 2    50   ~ 0
@@ -1625,7 +1581,7 @@ Wire Wire Line
 	11550 1200 12350 1200
 Text Label 11550 1200 0    50   ~ 0
 5V_REG
-Text Notes 4650 4400 0    50   ~ 10
+Text Notes 5650 4000 0    50   ~ 10
 F7 Microcontroller
 Text Notes 2650 9600 0    50   ~ 10
 Decoupling
@@ -1769,19 +1725,6 @@ Wire Wire Line
 Connection ~ 3400 3200
 Wire Wire Line
 	3400 3200 3600 3200
-$Comp
-L power:GND #PWR0104
-U 1 1 5F1CE124
-P 3300 8200
-F 0 "#PWR0104" H 3300 7950 50  0001 C CNN
-F 1 "GND" V 3300 8000 50  0000 C CNN
-F 2 "" H 3300 8200 50  0001 C CNN
-F 3 "" H 3300 8200 50  0001 C CNN
-	1    3300 8200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4200 8200 4300 8200
 Wire Wire Line
 	6850 8200 7400 8200
 Connection ~ 6850 8200
@@ -1814,7 +1757,7 @@ $EndComp
 Text Notes 12400 4700 0    50   ~ 10
 LEDs
 NoConn ~ 5700 7800
-Text Notes 3250 8500 0    50   ~ 0
+Text Notes 3400 8050 0    50   ~ 0
 PC15:13 used for ID2:0
 Text Label 13050 7100 0    50   ~ 0
 ~PIN4_5V~
@@ -2120,12 +2063,9 @@ Wire Wire Line
 Wire Wire Line
 	13050 7000 14500 7000
 Wire Wire Line
-	4300 8200 4300 8300
+	4300 8700 4300 8300
 Wire Wire Line
 	4300 8300 4400 8300
-Connection ~ 4300 8200
-Wire Wire Line
-	4300 8200 4400 8200
 $Comp
 L Device:C_Small C7
 U 1 1 5F511C72
@@ -2332,29 +2272,13 @@ $Comp
 L greaseweazle:NarrowPowerAdapter U8
 U 1 1 5FFAA123
 P 4450 4900
-F 0 "U8" H 4450 5125 50  0000 C CNN
-F 1 "NarrowPowerAdapter" H 4450 5034 50  0000 C CNN
+F 0 "U8" H 4000 4800 50  0000 C CNN
+F 1 "NarrowPowerAdapter" H 4450 4800 50  0000 C CNN
 F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 4400 5100 50  0001 C CNN
 F 3 "" H 4450 4900 50  0001 C CNN
 	1    4450 4900
 	1    0    0    -1  
 $EndComp
-$Comp
-L greaseweazle:NarrowPowerAdapter U7
-U 1 1 5FFCF92A
-P 3750 8200
-F 0 "U7" H 3750 8425 50  0000 C CNN
-F 1 "NarrowPowerAdapter" H 3750 8334 50  0000 C CNN
-F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 3700 8400 50  0001 C CNN
-F 3 "" H 3750 8200 50  0001 C CNN
-	1    3750 8200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 8300 4300 8700
-Wire Wire Line
-	4300 8700 4900 8700
-Connection ~ 4300 8300
 $Comp
 L Mechanical:MountingHole H5
 U 1 1 601C200E
@@ -2438,17 +2362,66 @@ Wire Wire Line
 	3100 1200 3100 1950
 Wire Wire Line
 	2200 1950 2200 1000
+Text Label 3600 5400 0    50   ~ 0
+BOOT
+Wire Wire Line
+	3600 5400 4400 5400
+Wire Wire Line
+	7700 1800 8700 1800
+Wire Wire Line
+	9500 1800 9700 1800
+Wire Wire Line
+	9000 2200 9000 2750
+Wire Wire Line
+	9200 2200 9200 2400
+Wire Wire Line
+	9000 1200 9000 1400
+Wire Wire Line
+	9200 1200 9200 1400
+Text Label 1200 1000 0    50   ~ 0
+12V_conn
 $Comp
-L greaseweazle:NarrowPowerAdapter U10
-U 1 1 602F8932
-P 3950 5700
-F 0 "U10" H 3950 5925 50  0000 C CNN
-F 1 "NarrowPowerAdapter" H 3950 5834 50  0000 C CNN
-F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 3900 5900 50  0001 C CNN
-F 3 "" H 3950 5700 50  0001 C CNN
-	1    3950 5700
+L greaseweazle:NarrowPowerAdapter U13
+U 1 1 5FFA820A
+P 4450 4750
+F 0 "U13" H 5000 4750 50  0000 C CNN
+F 1 "NarrowPowerAdapter" H 5450 4750 50  0000 C CNN
+F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 4400 4950 50  0001 C CNN
+F 3 "" H 4450 4750 50  0001 C CNN
+	1    4450 4750
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4000 4750 4000 4900
+Connection ~ 4000 4900
+$Comp
+L greaseweazle:NarrowPowerAdapter U12
+U 1 1 5FFF440F
+P 4450 4600
+F 0 "U12" H 5000 4600 50  0000 C CNN
+F 1 "NarrowPowerAdapter" H 5450 4600 50  0000 C CNN
+F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 4400 4800 50  0001 C CNN
+F 3 "" H 4450 4600 50  0001 C CNN
+	1    4450 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4600 4000 4750
+Connection ~ 4000 4750
+$Comp
+L greaseweazle:NarrowPowerAdapter U11
+U 1 1 60040917
+P 4450 4450
+F 0 "U11" H 5000 4450 50  0000 C CNN
+F 1 "NarrowPowerAdapter" H 5450 4450 50  0000 C CNN
+F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 4400 4650 50  0001 C CNN
+F 3 "" H 4450 4450 50  0001 C CNN
+	1    4450 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4450 4000 4600
+Connection ~ 4000 4600
 $Comp
 L Device:C_Small C10
 U 1 1 5EB0C2F3
@@ -2524,8 +2497,6 @@ Text Label 2700 5600 0    50   ~ 0
 VCAP
 Text Label 1400 5200 0    50   ~ 0
 ~RST~
-Text Label 3600 5400 0    50   ~ 0
-BOOT
 $Comp
 L Device:C_Small C9
 U 1 1 5EB3B6DA
@@ -2549,42 +2520,118 @@ Wire Wire Line
 Wire Wire Line
 	1900 5200 1400 5200
 Connection ~ 1900 5200
-Wire Wire Line
-	3600 5400 4400 5400
-Wire Wire Line
-	2700 5700 2800 5700
-$Comp
-L power:+3V3 #PWR0107
-U 1 1 5F877E0F
-P 2700 5700
-F 0 "#PWR0107" H 2700 5550 50  0001 C CNN
-F 1 "+3V3" V 2700 5950 50  0000 C CNN
-F 2 "" H 2700 5700 50  0001 C CNN
-F 3 "" H 2700 5700 50  0001 C CNN
-	1    2700 5700
-	0    -1   -1   0   
-$EndComp
 Connection ~ 2800 5700
 Connection ~ 2800 6100
-Wire Wire Line
-	1900 5200 4400 5200
-Wire Wire Line
-	2300 5600 4400 5600
 Wire Wire Line
 	3200 5700 3500 5700
 Connection ~ 3200 5700
 Wire Wire Line
-	7700 1800 8700 1800
+	2600 5700 2800 5700
+Text Label 4400 8900 0    50   ~ 0
+GND_for_U4
+$Comp
+L greaseweazle:NarrowPowerAdapter U15
+U 1 1 601B76C9
+P 3850 8700
+F 0 "U15" H 3800 8900 50  0000 C CNN
+F 1 "NarrowPowerAdapter" H 3850 8800 50  0000 C CNN
+F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25_thick" H 3800 8900 50  0001 C CNN
+F 3 "" H 3850 8700 50  0001 C CNN
+	1    3850 8700
+	1    0    0    -1  
+$EndComp
+Connection ~ 4300 8700
+$Comp
+L power:GND #PWR0104
+U 1 1 60336155
+P 3400 8700
+F 0 "#PWR0104" H 3400 8450 50  0001 C CNN
+F 1 "GND" V 3400 8500 50  0000 C CNN
+F 2 "" H 3400 8700 50  0001 C CNN
+F 3 "" H 3400 8700 50  0001 C CNN
+	1    3400 8700
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	9500 1800 9700 1800
+	4300 8900 4900 8900
 Wire Wire Line
-	9000 2200 9000 2750
+	5300 8600 5300 8900
 Wire Wire Line
-	9200 2200 9200 2400
+	5200 8600 5200 8900
+Connection ~ 5200 8900
 Wire Wire Line
-	9000 1200 9000 1400
+	5200 8900 5300 8900
 Wire Wire Line
-	9200 1200 9200 1400
-Text Label 1200 1000 0    50   ~ 0
-12V_conn
+	4900 8600 4900 8900
+Connection ~ 4900 8900
+Wire Wire Line
+	4900 8900 5000 8900
+Wire Wire Line
+	4300 8700 4300 8900
+Wire Wire Line
+	4400 8200 4300 8200
+Wire Wire Line
+	4300 8200 4300 8300
+Connection ~ 4300 8300
+Wire Wire Line
+	5000 8600 5000 8900
+Connection ~ 5000 8900
+Wire Wire Line
+	5000 8900 5100 8900
+Wire Wire Line
+	5100 8600 5100 8900
+Connection ~ 5100 8900
+Wire Wire Line
+	5100 8900 5200 8900
+Wire Wire Line
+	4900 4600 4950 4600
+Wire Wire Line
+	4950 4600 4950 5000
+Wire Wire Line
+	4950 5000 4900 5000
+Wire Wire Line
+	4950 4600 5300 4600
+Connection ~ 4950 4600
+Wire Wire Line
+	5300 4600 5300 5000
+Wire Wire Line
+	4900 4900 4900 4800
+Wire Wire Line
+	5000 4800 5000 5000
+Wire Wire Line
+	4900 4800 5000 4800
+Wire Wire Line
+	4900 4750 5200 4750
+Wire Wire Line
+	5200 4750 5200 5000
+Wire Wire Line
+	4900 4450 5100 4450
+Wire Wire Line
+	5100 4450 5100 5000
+$Comp
+L greaseweazle:NarrowPowerAdapter U7
+U 1 1 608FB240
+P 3950 5700
+F 0 "U7" H 3600 5600 50  0000 C CNN
+F 1 "NarrowPowerAdapter" H 4050 5600 50  0000 C CNN
+F 2 "greaseweazle:NarrowPowerAdapter_0.60_to_0.25" H 3900 5900 50  0001 C CNN
+F 3 "" H 3950 5700 50  0001 C CNN
+	1    3950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 5600 4400 5600
+Wire Wire Line
+	1900 5200 4400 5200
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60AF096A
+P 2600 5700
+F 0 "#PWR?" H 2600 5550 50  0001 C CNN
+F 1 "+3V3" H 2615 5873 50  0000 C CNN
+F 2 "" H 2600 5700 50  0001 C CNN
+F 3 "" H 2600 5700 50  0001 C CNN
+	1    2600 5700
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

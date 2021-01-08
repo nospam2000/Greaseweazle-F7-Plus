@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1)
+    (start_pass_no 4291)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -165,7 +165,8 @@
     "/~WR_GATE_5V~" "/~WR_DAT_5V~" "/~STEP_5V~" "/~DIR_5V~" "/~M1_5V~" "/~DS0_5V~" "/~DS1_5V~" "/~M0_5V~"
     "Net-(C1-Pad2)" "Net-(J6-Pad1)" "/USB_DIN+" "/USB_DIN-" "/OSC_IN" "/OSC_OUT" "Net-(J9-Pad3)" "Net-(J9-Pad1)"
     "Net-(J10-Pad1)" /FB "/~PIN6_5V~" "/~PIN4_5V~" "/~PIN2_5V~" /~PIN4~ /~PIN6~ /~PIN2~
-    "Net-(U4-Pad1)" "Net-(U4-Pad12)" "Net-(U1-Pad5)" "Net-(U10-Pad2)" "/USB_D-" "/USB_D+"
+    "Net-(U1-Pad5)" "/USB_D-" "/USB_D+" "/GND_for_U4" "Net-(U13-Pad2)" "Net-(U11-Pad2)" "Net-(U12-Pad2)" "Net-(U4-Pad19)"
+    "Net-(U4-Pad13)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

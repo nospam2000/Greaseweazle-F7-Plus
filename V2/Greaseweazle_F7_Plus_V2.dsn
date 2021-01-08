@@ -24,6 +24,14 @@
       (path pcb 0  230000 -150000  150000 -150000  150000 -100000  230000 -100000
             230000 -150000)
     )
+    (keepout "" (polygon F.Cu 0  152781 -148971  151003 -148971  151003 -147193  152781 -147193
+            152781 -148971))
+    (keepout "" (polygon B.Cu 0  152781 -148971  151003 -148971  151003 -147193  152781 -147193
+            152781 -148971))
+    (keepout "" (polygon F.Cu 0  224269 -102997  222491 -102997  222517 -101219  224295 -101219
+            224269 -102997))
+    (keepout "" (polygon B.Cu 0  224269 -102997  222491 -102997  222517 -101219  224295 -101219
+            224269 -102997))
     (via "Via[0-1]_600:300_um" "Via[0-1]_800:500_um")
     (rule
       (width 250)
@@ -33,11 +41,16 @@
     )
   )
   (placement
+    (component greaseweazle:NarrowPowerAdapter_0.60_to_0.25_thick
+      (place U15 189802 -132461 front 270 (PN NarrowPowerAdapter))
+    )
     (component greaseweazle:NarrowPowerAdapter_0.60_to_0.25
-      (place U10 189738 -122174 front 0 (PN NarrowPowerAdapter))
+      (place U7 189751 -122187 front 0 (PN NarrowPowerAdapter))
+      (place U13 196380 -137757 front 225 (PN NarrowPowerAdapter))
+      (place U12 195758 -122187 front 0 (PN NarrowPowerAdapter))
+      (place U11 186830 -137249 front 135 (PN NarrowPowerAdapter))
       (place U9 208280 -116459 front 0 (PN NarrowPowerAdapter))
-      (place U8 183134 -124968 front 45 (PN NarrowPowerAdapter))
-      (place U7 186817 -124206 front 45 (PN NarrowPowerAdapter))
+      (place U8 184366 -126619 front 45 (PN NarrowPowerAdapter))
     )
     (component greaseweazle:ToolingHole_1.152mm
       (place H6 151892 -148082 front 0 (PN ToolHole))
@@ -153,6 +166,11 @@
     )
   )
   (library
+    (image greaseweazle:NarrowPowerAdapter_0.60_to_0.25_thick
+      (outline (path signal 600  0 0  0 -736.6))
+      (pin Round[T]Pad_600_um 1 0 0)
+      (pin Round[T]Pad_300_um 2 0 -889)
+    )
     (image greaseweazle:NarrowPowerAdapter_0.60_to_0.25
       (outline (path signal 250  0 0  0 -889))
       (pin Round[T]Pad_600_um 1 0 0)
@@ -1039,15 +1057,15 @@
       (pins R10-2 D2-2)
     )
     (net GND
-      (pins U7-1 R4-2 R2-2 D1-1 C20-2 C19-2 C18-2 C17-2 C16-2 C15-2 C14-2 C13-2 C12-2
+      (pins U15-1 R4-2 R2-2 D1-1 C20-2 C19-2 C18-2 C17-2 C16-2 C15-2 C14-2 C13-2 C12-2
         C11-2 C10-2 C9-2 C8-2 C7-2 C6-2 C5-2 C4-2 C3-2 C2-2 U1-1 J3-6 J3-6@1 J3-6@2
         J3-6@3 J3-6@4 J3-6@5 J3-5 J3-6@6 J3-6@7 J9-2 U3-2 J11-2 U2-2 Q1-1 J1-2 J12-33
         J12-31 J12-29 J12-27 J12-25 J12-23 J12-21 J12-19 J12-17 J12-15 J12-13 J12-11
         J12-9 J12-7 J12-5 J12-3 J12-1 U5-7 U6-7 J7-5 J4-3 J4-2 J8-4 J2-5 J2-5@1 J2-4)
     )
     (net +3V3
-      (pins U10-1 U8-1 R10-1 R9-1 R3-1 C18-1 C17-1 C16-1 C15-1 C12-1 C11-1 C8-1 U2-5
-        J7-1)
+      (pins U7-1 U13-1 U12-1 U11-1 U8-1 R10-1 R9-1 R3-1 C18-1 C17-1 C16-1 C15-1 C12-1
+        C11-1 C8-1 U2-5 J7-1)
     )
     (net /~DS0~
       (pins U4-29 U6-5)
@@ -1199,17 +1217,8 @@
     (net /~PIN2~
       (pins U4-33 U6-1)
     )
-    (net "Net-(U4-Pad1)"
-      (pins U8-2 U4-64 U4-48 U4-32 U4-19 U4-1)
-    )
-    (net "Net-(U4-Pad12)"
-      (pins U7-2 U4-63 U4-47 U4-31 U4-18 U4-12 U4-3 U4-2)
-    )
     (net "Net-(U1-Pad5)"
       (pins U9-2 U1-5)
-    )
-    (net "Net-(U10-Pad2)"
-      (pins U10-2 U4-13)
     )
     (net "/USB_D-"
       (pins U4-35 U3-6)
@@ -1220,14 +1229,33 @@
     (net /12V_conn
       (pins Q1-3 J1-1)
     )
-    (class kicad_default "" /ACT /BOOT /FB /OSC_IN /OSC_OUT /RX /SWCLK /SWDIO
-      /TX /USB_D+ "/USB_D-" /USB_DIN+ "/USB_DIN-" /VCAP /~DIR_5V~ /~DIR~ /~DS0_5V~
-      /~DS0~ /~DS1_5V~ /~DS1~ /~INDEX~ /~M0_5V~ /~M0~ /~M1_5V~ /~M1~ /~PIN2_5V~
-      /~PIN2~ /~PIN4_5V~ /~PIN4~ /~PIN6_5V~ /~PIN6~ /~RD_DAT~ /~RST~ /~SIDE_5V~
-      /~SIDE~ /~STEP_5V~ /~STEP~ /~TRK_00~ /~WR_DAT_5V~ /~WR_DAT~ /~WR_GATE_5V~
-      /~WR_GATE~ /~WR_PROT~ "Net-(C1-Pad2)" "Net-(D1-Pad2)" "Net-(D2-Pad2)"
-      "Net-(J10-Pad1)" "Net-(J6-Pad1)" "Net-(J9-Pad1)" "Net-(J9-Pad3)" "Net-(U1-Pad5)"
-      "Net-(U10-Pad2)" "Net-(U4-Pad1)" "Net-(U4-Pad12)"
+    (net /GND_for_U4
+      (pins U15-2 U4-63 U4-47 U4-31 U4-18 U4-12 U4-3 U4-2)
+    )
+    (net "Net-(U13-Pad2)"
+      (pins U13-2 U4-48)
+    )
+    (net "Net-(U11-Pad2)"
+      (pins U11-2 U4-32)
+    )
+    (net "Net-(U12-Pad2)"
+      (pins U12-2 U4-64 U4-1)
+    )
+    (net "Net-(U4-Pad19)"
+      (pins U8-2 U4-19)
+    )
+    (net "Net-(U4-Pad13)"
+      (pins U7-2 U4-13)
+    )
+    (class kicad_default "" /ACT /BOOT /FB /GND_for_U4 /OSC_IN /OSC_OUT /RX
+      /SWCLK /SWDIO /TX /USB_D+ "/USB_D-" /USB_DIN+ "/USB_DIN-" /VCAP /~DIR_5V~
+      /~DIR~ /~DS0_5V~ /~DS0~ /~DS1_5V~ /~DS1~ /~INDEX~ /~M0_5V~ /~M0~ /~M1_5V~
+      /~M1~ /~PIN2_5V~ /~PIN2~ /~PIN4_5V~ /~PIN4~ /~PIN6_5V~ /~PIN6~ /~RD_DAT~
+      /~RST~ /~SIDE_5V~ /~SIDE~ /~STEP_5V~ /~STEP~ /~TRK_00~ /~WR_DAT_5V~
+      /~WR_DAT~ /~WR_GATE_5V~ /~WR_GATE~ /~WR_PROT~ "Net-(C1-Pad2)" "Net-(D1-Pad2)"
+      "Net-(D2-Pad2)" "Net-(J10-Pad1)" "Net-(J6-Pad1)" "Net-(J9-Pad1)" "Net-(J9-Pad3)"
+      "Net-(U1-Pad5)" "Net-(U11-Pad2)" "Net-(U12-Pad2)" "Net-(U13-Pad2)" "Net-(U4-Pad13)"
+      "Net-(U4-Pad19)"
       (circuit
         (use_via Via[0-1]_600:300_um)
       )
