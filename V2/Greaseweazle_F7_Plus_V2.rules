@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 4291)
+    (start_pass_no 7112)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -177,7 +177,7 @@
     )
   )
   (class HighPower
-    +12V "/5V_REG" "/12V_conn"
+    +5V +12V "/5V_REG" /SW "/12V_conn"
     (clearance_class HighPower)
     (via_rule HighPower)
     (rule
@@ -188,7 +188,7 @@
     )
   )
   (class Power
-    GND +3V3 +5V "/USB_VBUS" /SW
+    GND +3V3 "/USB_VBUS"
     (clearance_class Power)
     (via_rule Power)
     (rule
