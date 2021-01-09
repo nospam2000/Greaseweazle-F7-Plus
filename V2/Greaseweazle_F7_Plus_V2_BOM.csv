@@ -3,6 +3,7 @@ Comment,Designator,Footprint,LCSC
 "27P","C13,C14","Capacitor_SMD:C_0402_1005Metric","C1557"
 "100N","C1,C6,C9,C12,C15,C16,C17,C18,C19,C20","Capacitor_SMD:C_0402_1005Metric","C1525"
 "10U","C2,C3","Capacitor_SMD:C_0805_2012Metric","C15850"
+"1000uF","C21,C22,C23","Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm",""
 "22U","C4,C5","Capacitor_SMD:C_0805_2012Metric","C45783"
 "1U0","C7,C8,C11","Capacitor_SMD:C_0402_1005Metric","C52923"
 "RED","D1","LED_SMD:LED_0603_1608Metric","C2286"

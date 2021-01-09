@@ -53,10 +53,10 @@ with open(filenameOut, 'w', newline='') as csvfileout:
                         if trans.get('delete') :
                             deleteRow = True
                             print("Ref=", row['Ref'], "  deleted")
-                        else :
-                            rot = (rot + trans['rotOffset'] + 360) % 360
-                            print("Ref=", row['Ref'], "  rotOffset=", trans['rotOffset'], "  rot=", rot)
-                        break
+                        rotOffset = trans.get('rotOffset', 0)
+                        if(rotOffset) :
+                          rot = (rot + rotOffset + 360) % 360
+                          print("Ref=", row['Ref'], "  rotOffset=", rotOffset, "  rot=", rot)
 
                 writer.writerow({'Designator': row['Ref'],'Val': row['Val'], 'Package': row['Package'], 'Mid X': row['PosX'], 'Mid Y': row['PosY'], 'Rotation': rot, 'Layer': row['Side']})
                 if not deleteRow :
