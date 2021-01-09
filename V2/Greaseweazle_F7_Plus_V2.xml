@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/Users/michael/Documents/greaseweazle_f7plus_jlcpcb/V2/Greaseweazle_F7_Plus_V2.sch</source>
-    <date>2021 January 09, Saturday 21:22:20</date>
+    <date>2021 January 09, Saturday 21:56:31</date>
     <tool>Eeschema (5.1.6-0-10_14)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -799,6 +799,14 @@
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>6114903B</tstamp>
+    </comp>
+    <comp ref="LOGO2">
+      <value>Greaseweazle Logo</value>
+      <footprint>greaseweazle:Greaseweazle_Logo_verysmall</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Graphic" part="Logo_Open_Hardware_Small" description="Open Hardware logo, small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6142CF0C</tstamp>
     </comp>
   </components>
   <libparts>
