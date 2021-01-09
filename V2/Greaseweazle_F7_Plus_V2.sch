@@ -2737,7 +2737,7 @@ L Graphic:Logo_Open_Hardware_Small LOGO2
 U 1 1 6142CF0C
 P 15400 10500
 F 0 "LOGO2" H 15400 10775 50  0001 C CNN
-F 1 "Greaseweazle Logo" H 15400 10275 50  0001 C CNN
+F 1 "GW Logo" H 15400 10275 50  0001 C CNN
 F 2 "greaseweazle:Greaseweazle_Logo_verysmall" H 15400 10500 50  0001 C CNN
 F 3 "~" H 15400 10500 50  0001 C CNN
 	1    15400 10500

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/michael/Documents/greaseweazle_f7plus_jlcpcb/V2/Greaseweazle_F7_Plus_V2.sch)
-    (date "2021 January 09, Saturday 21:53:58")
+    (date "2021 January 09, Saturday 22:17:13")
     (tool "Eeschema (5.1.6-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -676,7 +676,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 6114903B))
     (comp (ref LOGO2)
-      (value "Greaseweazle Logo")
+      (value "GW Logo")
       (footprint greaseweazle:Greaseweazle_Logo_verysmall)
       (datasheet ~)
       (libsource (lib Graphic) (part Logo_Open_Hardware_Small) (description "Open Hardware logo, small"))
