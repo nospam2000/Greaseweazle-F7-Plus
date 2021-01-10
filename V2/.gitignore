@@ -1,0 +1,7 @@
+gui_defaults.par.bak
+*.kicad_pcb-bak
+*.sch-bak
+*.bin
+Gerber.zip
+Plots.zip
+logs/
