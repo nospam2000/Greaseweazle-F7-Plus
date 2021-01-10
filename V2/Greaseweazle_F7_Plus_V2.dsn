@@ -46,7 +46,7 @@
       (place LOGO1 199644 -132334 front 0 (PN "OSHW Logo"))
     )
     (component Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm
-      (place C23 201422 -125476 front 90 (PN 1000uF))
+      (place C23 199720 -124003 front 90 (PN 1000uF))
       (place C22 198882 -113284 front 90 (PN 1000uF))
       (place C21 223520 -126238 front 90 (PN 1000uF))
     )

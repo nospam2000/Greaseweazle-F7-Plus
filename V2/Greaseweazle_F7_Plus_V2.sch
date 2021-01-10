@@ -2664,12 +2664,12 @@ Wire Wire Line
 Wire Wire Line
 	4400 3200 4400 3400
 $Comp
-L Device:C_Small C21
+L Device:CP C21
 U 1 1 61147C2B
 P 3700 10150
 F 0 "C21" H 3792 10196 50  0000 L CNN
 F 1 "1000uF" H 3792 10105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm" H 3700 10150 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3700 10150 50  0001 C CNN
 F 3 "https://www.mouser.de/datasheet/2/977/e_PK-1601094.pdf" H 3700 10150 50  0001 C CNN
 F 4 "" H 3700 10150 50  0001 C CNN "LCSC"
 F 5 "" H 3700 10150 50  0001 C CNN "MFR.Part"
@@ -2677,70 +2677,70 @@ F 5 "" H 3700 10150 50  0001 C CNN "MFR.Part"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C22
+L Device:CP C22
 U 1 1 61147FE4
-P 4150 10150
-F 0 "C22" H 4242 10196 50  0000 L CNN
-F 1 "1000uF" H 4242 10105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm" H 4150 10150 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/977/e_PK-1601094.pdf" H 4150 10150 50  0001 C CNN
-F 4 "" H 4150 10150 50  0001 C CNN "LCSC"
-F 5 "" H 4150 10150 50  0001 C CNN "MFR.Part"
-	1    4150 10150
+P 4200 10150
+F 0 "C22" H 4292 10196 50  0000 L CNN
+F 1 "1000uF" H 4292 10105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4200 10150 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/977/e_PK-1601094.pdf" H 4200 10150 50  0001 C CNN
+F 4 "" H 4200 10150 50  0001 C CNN "LCSC"
+F 5 "" H 4200 10150 50  0001 C CNN "MFR.Part"
+	1    4200 10150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C23
+L Device:CP C23
 U 1 1 6114903B
-P 4600 10150
-F 0 "C23" H 4692 10196 50  0000 L CNN
-F 1 "1000uF" H 4692 10105 50  0000 L CNN
-F 2 "Capacitor_THT:C_Radial_D10.0mm_H20.0mm_P5.00mm" H 4600 10150 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/977/e_PK-1601094.pdf" H 4600 10150 50  0001 C CNN
-F 4 "" H 4600 10150 50  0001 C CNN "LCSC"
-F 5 "" H 4600 10150 50  0001 C CNN "MFR.Part"
-	1    4600 10150
+P 4700 10150
+F 0 "C23" H 4792 10196 50  0000 L CNN
+F 1 "1000uF" H 4792 10105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4700 10150 50  0001 C CNN
+F 3 "https://www.mouser.de/datasheet/2/977/e_PK-1601094.pdf" H 4700 10150 50  0001 C CNN
+F 4 "" H 4700 10150 50  0001 C CNN "LCSC"
+F 5 "" H 4700 10150 50  0001 C CNN "MFR.Part"
+	1    4700 10150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3100 9950 3700 9950
 Connection ~ 3100 9950
 Connection ~ 3100 10350
-Wire Wire Line
-	3700 10250 3700 10350
-Connection ~ 3700 10350
-Wire Wire Line
-	3700 10350 3100 10350
-Wire Wire Line
-	4150 10250 4150 10350
-Connection ~ 4150 10350
-Wire Wire Line
-	4150 10350 3700 10350
-Wire Wire Line
-	4600 10250 4600 10350
-Wire Wire Line
-	4600 10350 4150 10350
-Wire Wire Line
-	4600 10050 4600 9950
-Wire Wire Line
-	4150 10050 4150 9950
-Connection ~ 4150 9950
-Wire Wire Line
-	4150 9950 4600 9950
-Wire Wire Line
-	3700 10050 3700 9950
-Connection ~ 3700 9950
-Wire Wire Line
-	3700 9950 4150 9950
 $Comp
 L Graphic:Logo_Open_Hardware_Small LOGO2
 U 1 1 6142CF0C
 P 15400 10500
 F 0 "LOGO2" H 15400 10775 50  0001 C CNN
 F 1 "GW Logo" H 15400 10275 50  0001 C CNN
-F 2 "greaseweazle:Greaseweazle_Logo_verysmall" H 15400 10500 50  0001 C CNN
+F 2 "greaseweazle:Greaseweazle_Logo_small" H 15400 10500 50  0001 C CNN
 F 3 "~" H 15400 10500 50  0001 C CNN
 	1    15400 10500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3100 9950 3700 9950
+Wire Wire Line
+	3100 10350 3700 10350
+Wire Wire Line
+	3700 9950 3700 10000
+Connection ~ 3700 9950
+Wire Wire Line
+	3700 10300 3700 10350
+Connection ~ 3700 10350
+Wire Wire Line
+	3700 10350 4200 10350
+Wire Wire Line
+	4200 10300 4200 10350
+Connection ~ 4200 10350
+Wire Wire Line
+	4700 10300 4700 10350
+Wire Wire Line
+	4200 10350 4700 10350
+Wire Wire Line
+	4700 10000 4700 9950
+Wire Wire Line
+	3700 9950 4200 9950
+Wire Wire Line
+	4200 10000 4200 9950
+Connection ~ 4200 9950
+Wire Wire Line
+	4200 9950 4700 9950
 $EndSCHEMATC
