@@ -27,7 +27,7 @@ Comment,Designator,Footprint,LCSC
 "54K9","R1","Resistor_SMD:R_0603_1608Metric","C23077"
 "560R","R11,R12","Resistor_SMD:R_0805_2012Metric","C28636"
 "220R","R21","Resistor_SMD:R_0805_2012Metric","C17557"
-"1K0","R3,R5,R6,R7,R8","Resistor_SMD:R_0805_2012Metric","C17513"
+"1K0","R3,R5,R6,R7,R8,R13,R14,R15,R16,R17","Resistor_SMD:R_0805_2012Metric","C17513"
 "10K0","R2,R4","Resistor_SMD:R_0603_1608Metric","C25804"
 "330R","R9,R10,R22","Resistor_SMD:R_0805_2012Metric","C17630"
 "TPS562201DDC","U1","Package_TO_SOT_SMD:SOT-23-6","C90061"
