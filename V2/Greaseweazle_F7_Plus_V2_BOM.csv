@@ -23,6 +23,7 @@ Comment,Designator,Footprint,LCSC
 "MWSA0503S-4R7MT","L1","greaseweazle:L_5.4x5.2_H2.8","C408410"
 "OSHW Logo","LOGO1","Symbol:OSHW-Logo2_7.3x6mm_SilkScreen",""
 "GW Logo","LOGO2","greaseweazle:Greaseweazle_Logo_small",""
+"GW Logo","LOGO3","Symbol:Symbol_Barrel_Polarity",""
 "SI2369DS-T1-GE3","Q1","Package_TO_SOT_SMD:SOT-23","C141546"
 "54K9","R1","Resistor_SMD:R_0603_1608Metric","C23077"
 "560R","R11,R12","Resistor_SMD:R_0805_2012Metric","C28636"

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/michael/Documents/greaseweazle_f7plus_jlcpcb/V2/Greaseweazle_F7_Plus_V2.sch)
-    (date "2021 January 10, Sunday 12:42:15")
+    (date "2021 January 10, Sunday 16:23:14")
     (tool "Eeschema (5.1.6-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -731,7 +731,14 @@
         (field (name MFR.Part) 0805W8F1001T5E))
       (libsource (lib Device) (part R_Small) (description "Resistor, small symbol"))
       (sheetpath (names /) (tstamps /))
-      (tstamp 60D9C0A4)))
+      (tstamp 60D9C0A4))
+    (comp (ref LOGO3)
+      (value "GW Logo")
+      (footprint Symbol:Symbol_Barrel_Polarity)
+      (datasheet ~)
+      (libsource (lib Graphic) (part Logo_Open_Hardware_Small) (description "Open Hardware logo, small"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 612989CF)))
   (libparts
     (libpart (lib 74xx) (part 74LCX07)
       (aliases

@@ -2933,4 +2933,15 @@ NoConn ~ 4400 7600
 NoConn ~ 9150 5600
 NoConn ~ 8550 5600
 NoConn ~ 1200 1100
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO3
+U 1 1 612989CF
+P 14900 10500
+F 0 "LOGO3" H 14900 10775 50  0001 C CNN
+F 1 "GW Logo" H 14900 10275 50  0001 C CNN
+F 2 "Symbol:Symbol_Barrel_Polarity" H 14900 10500 50  0001 C CNN
+F 3 "~" H 14900 10500 50  0001 C CNN
+	1    14900 10500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
