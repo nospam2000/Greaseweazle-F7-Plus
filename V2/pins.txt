@@ -1,0 +1,107 @@
+
+F7 PINS for media sense (enhanced interface)
+********************************************
+
+The enhanced mode is needed for 2.88MB drives to select the data rate 1000kbps.
+It can also be used for the enhanced commands (lock, unlock, eject).
+
+see here for the pin definitions of the enhanced 34pin interface header:
+    http://www.mcamafia.de/pdf/ps2_fdd_trm_s42g2194_00.pdf
+    or https://www.ardent-tool.com/docs/pdf/ps2_fdd_trm_s42g2194_00.pdf
+    IBM Personal System/2
+    3.5inch Diskette drives
+    Technical Reference 42G2194 S42G-2194-00
+    NOTE: There are differences between the 1990 Tech Ref and the '92 Tech Ref Signal names for
+    the Enhanced 34-pin interface.i The additional definition is probably related to the floppy
+    controller used for the EE floppies.
+
+more links:
+    https://www.ardent-tool.com/floppy/Floppy_Pinouts.html
+    http://ohlandl.ipv7.net/floppy/Floppy_Pinouts.html
+
+
+SWD:
+----
+ PA13  SWDIO
+ PA14  SWCLK
+
+Serial Debug:
+-------------
+ PA9   TX
+ PA10  RX
+
+USB:
+----
+ PB14  USB_DM
+ PB15  USB_DP
+
+Floppy:
+-------
+GPIn:
+ PA12    4: DTYPE_ID1 (drive type ID/drive status) (*)
+ PB2     8: IDX
+ PA11    9: DTYPE_ID0 (drive type ID/drive status) (*)
+ PA5    17: MTYPE_ID1 (media type) (*)
+ PA3    26: TRK0
+ PA4    17: MTYPE_ID0 (media type) (*)
+ PA1    28: WRPROT
+GPOut:
+ PC8    33: DENSEL0 (data rate select) (*)
+ PB12    2: DENSEL1 (data rate select)
+ PB1    10: MTR_A (M0)
+ PB0    12: SEL_B
+ PB11   14: SEL_A
+ PB10   16: MTR_B (M1)
+ PC4    18: DIR
+ PA7    20: STEP
+ PA6    24: DKWE
+ PC3    32: SIDE
+TimerIn:
+ PA0    30: DKRD (Timer2/1, CC1:DMA1/Stream5/Chn3)
+TimerOut:
+ PA2    22: DKWD (Timer2/3, UP:DMA1/Stream1/Chn3)
+
+Pins marked with (*) have been added in this release
+
+SW changed necessary:
+ - DENSEL0 added, DENSEL is now DENSEL0
+ - DTYPE_ID0+1 added
+ - MTYPE_ID0+1 added
+ - the pins PA4-5,PA11-12 and PC8 are no longer unused
+
+Unused Pins:
+------------
+Firmware pulls these high, internally:
+ PA8,15
+ PB3-9,13
+ PC0-2,5-7,9-15
+
+
+FLOPPY HEADER
+*************
+
+IBM/PC 34-pin Floppy Host Interface:
+------------------------------------
+  2: -> DENSEL1 (data rate select, 5.25: HIGH=360rpm/high-density, LOW=300rpm, low-density)
+  3: -> +5V
+  4: <- DTYPE_ID1 (drive type ID/drive status)
+  6: n/c (spec says +12V)
+  8: <- INDEX
+  9: <- DTYPE_ID0 (drive type ID/drive status)
+ 10: -> MTR_B (M0)
+ 12: -> SEL_A (DS1)
+ 14: -> SEL_B (DS0)
+ 16: -> MTR_A (M1)
+ 18: -> DIR
+ 17: <- MTYPE_ID1 (media type)
+ 20: -> STEP
+ 22: -> DKWD (WR_DAT)
+ 24: -> DKWE (WR_GATE)
+ 26: <- TRK0 (TRK_00)
+ 27: <- MTYPE_ID0 (media type)
+ 28: <- WRPROT
+ 30: <- DKRD (RD_DAT)
+ 32: -> SIDE
+ 33: -> DENSEL0 (data rate select, 5.25: HIGH=360rpm/high-density, LOW=300rpm, low-density)
+ 34: <- DSKCHG / RDY(5.25)
+All non mentioned odd pins are ground.
