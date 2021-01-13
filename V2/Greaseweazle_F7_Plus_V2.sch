@@ -645,22 +645,11 @@ Text Label 6500 8100 2    50   ~ 0
 ~DATA_RATE_SEL1~
 Wire Wire Line
 	5700 8100 6500 8100
-NoConn ~ 5700 7700
-NoConn ~ 5700 7600
-NoConn ~ 5700 7500
-NoConn ~ 5700 7400
-NoConn ~ 5700 7300
-NoConn ~ 5700 7200
-NoConn ~ 4400 6800
-NoConn ~ 4400 8100
-NoConn ~ 4400 8000
-NoConn ~ 4400 7900
-NoConn ~ 5700 6700
-NoConn ~ 4400 7800
-NoConn ~ 4400 7500
 NoConn ~ 4400 7200
 NoConn ~ 4400 7100
 NoConn ~ 4400 7000
+NoConn ~ 5700 6700
+NoConn ~ 4400 7500
 NoConn ~ 4400 8400
 Text Label 6500 8000 2    50   ~ 0
 ~DS0~
@@ -710,19 +699,6 @@ Wire Wire Line
 	5700 5200 6500 5200
 Wire Wire Line
 	4400 7300 3600 7300
-$Comp
-L MCU_ST_STM32F7:STM32F732RETx U4
-U 1 1 5EAAE527
-P 5100 6800
-F 0 "U4" H 5100 6900 50  0000 C CNN
-F 1 "STM32F730R8T6" H 5100 6800 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 4500 5100 50  0001 R CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/2001031734_STMicroelectronics-STM32F730R8T6_C478453.pdf" H 5100 6800 50  0001 C CNN
-F 4 "C478453" H 5100 6800 50  0001 C CNN "LCSC"
-F 5 "STM32F730R8T6" H 5100 6800 50  0001 C CNN "MFR.Part"
-	1    5100 6800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5F086C62
@@ -1670,8 +1646,7 @@ F 3 "" H 11700 4400 50  0001 C CNN
 $EndComp
 Text Notes 12400 4700 0    50   ~ 10
 LEDs
-NoConn ~ 5700 7800
-Text Notes 3400 8050 0    50   ~ 0
+Text Notes 3350 8300 0    50   ~ 0
 PC15:13 used for ID2:0
 Text Label 11550 6850 0    50   ~ 0
 ~DTYPE_ID1~
@@ -2586,19 +2561,6 @@ F 5 "" H 4200 10150 50  0001 C CNN "MFR.Part"
 	1    4200 10150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP C23
-U 1 1 6114903B
-P 4700 10150
-F 0 "C23" H 4792 10196 50  0000 L CNN
-F 1 "1000uF" H 4792 10105 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 4700 10150 50  0001 C CNN
-F 3 "https://www.mouser.de/datasheet/2/977/e_PK-1601094.pdf" H 4700 10150 50  0001 C CNN
-F 4 "" H 4700 10150 50  0001 C CNN "LCSC"
-F 5 "" H 4700 10150 50  0001 C CNN "MFR.Part"
-	1    4700 10150
-	1    0    0    -1  
-$EndComp
 Connection ~ 3100 9950
 Connection ~ 3100 10350
 $Comp
@@ -2626,20 +2588,10 @@ Wire Wire Line
 	3700 10350 4200 10350
 Wire Wire Line
 	4200 10300 4200 10350
-Connection ~ 4200 10350
-Wire Wire Line
-	4700 10300 4700 10350
-Wire Wire Line
-	4200 10350 4700 10350
-Wire Wire Line
-	4700 10000 4700 9950
 Wire Wire Line
 	3700 9950 4200 9950
 Wire Wire Line
 	4200 10000 4200 9950
-Connection ~ 4200 9950
-Wire Wire Line
-	4200 9950 4700 9950
 Text Notes 14050 6500 0    50   ~ 0
 TODO: check pin assignment:\nPin 3 is 5V\nPin 6 is +12V\ncheck also the “enhanced 34pin header interface”\nhttp://www.mcamafia.de/pdf/ps2_fdd_trm_s42g2194_00.pdf\n\n34-pin Header Interface, Media Sense\n  This connector is for drives and controllers that support media sense.\nPin Signal                         Pin Signal\n 1 Ground                          2 Data rate Select 1\n 3 + 5VDC                          4 Drive Type ID1/Drive status 1\n 5 Ground                          6 + 12VDC\n 7 Ground                          8 -Index\n 9 Drive Type ID0/Drive status 0  10 Reserved\n11 Ground                         12 -Drive Select\n13 Ground                         14 -Security Command*\n15 Ground                         16 -Motor Enable\n17 Media Type ID1/Drive status 3  18 -Direction In\n19 Ground                         20 -Step\n21 Ground                         22 -Write Data\n23 Ground                         24 -Write Enable\n25 Ground                         26 -Track 0\n27 Media Type ID0/Drive status 2  28 -Write Protect\n29 Ground                         30 -Read Data\n31 Ground                         32 -Head 1 Select\n33 Data rate Select 0             34 -Diskette Change\nFigure 10.  Signal Assignments For the Enhanced 34-pin Header Interface\n* '90 ref has this Reserved\nAll blue text is not present in '90 Tech Ref 
 Wire Wire Line
@@ -2925,13 +2877,6 @@ Text Label 6000 6000 0    50   ~ 0
 NoConn ~ 13000 6950
 Text Notes 12550 7000 0    50   ~ 0
 +12V n.c.
-Text Notes 9650 5650 0    50   ~ 0
-Reserved, formerly used for\npin6 driven by PC7
-Text Notes 3450 7600 0    50   ~ 0
-PC7 Reserved, formerly\nused for pin6
-NoConn ~ 4400 7600
-NoConn ~ 9150 5600
-NoConn ~ 8550 5600
 NoConn ~ 1200 1100
 $Comp
 L Graphic:Logo_Open_Hardware_Small LOGO3
@@ -2944,4 +2889,178 @@ F 3 "~" H 14900 10500 50  0001 C CNN
 	1    14900 10500
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8550 5600 7750 5600
+Text Label 7750 5600 0    50   ~ 0
+~USER_PIN1_OUT~
+Wire Wire Line
+	9150 5600 10350 5600
+Text Label 9650 5600 0    50   ~ 0
+~USER_PIN1_OUT_5V~
+Wire Wire Line
+	4400 7600 3600 7600
+Text Label 3600 7600 0    50   ~ 0
+~USER_PIN1_OUT~
+$Comp
+L MCU_ST_STM32F7:STM32F732RETx U4
+U 1 1 5EAAE527
+P 5100 6800
+F 0 "U4" H 5100 6900 50  0000 C CNN
+F 1 "STM32F730R8T6" H 5100 6800 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 4500 5100 50  0001 R CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/2001031734_STMicroelectronics-STM32F730R8T6_C478453.pdf" H 5100 6800 50  0001 C CNN
+F 4 "C478453" H 5100 6800 50  0001 C CNN "LCSC"
+F 5 "STM32F730R8T6" H 5100 6800 50  0001 C CNN "MFR.Part"
+	1    5100 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 7200 6500 7200
+Wire Wire Line
+	5700 7300 6500 7300
+Wire Wire Line
+	5700 7400 6500 7400
+Wire Wire Line
+	5700 7500 6500 7500
+Wire Wire Line
+	5700 7600 6500 7600
+Wire Wire Line
+	5700 7700 6500 7700
+Wire Wire Line
+	5700 7800 6500 7800
+Text Label 6100 7200 0    50   ~ 0
+~USER_PIN2~
+Text Label 6100 7300 0    50   ~ 0
+~USER_PIN3~
+Text Label 6100 7400 0    50   ~ 0
+~USER_PIN4~
+Text Label 6100 7500 0    50   ~ 0
+~USER_PIN5~
+Text Label 6100 7600 0    50   ~ 0
+~USER_PIN6~
+Text Label 6100 7700 0    50   ~ 0
+~USER_PIN7~
+Text Label 6100 7800 0    50   ~ 0
+~USER_PIN8~
+$Comp
+L Connector_Generic:Conn_02x08_Odd_Even J13
+U 1 1 616411D7
+P 8650 8800
+F 0 "J13" H 8700 9317 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 8700 9226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 8650 8800 50  0001 C CNN
+F 3 "~" H 8650 8800 50  0001 C CNN
+	1    8650 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 8500 7700 8500
+Wire Wire Line
+	8450 8600 7650 8600
+Wire Wire Line
+	8450 8700 7650 8700
+Wire Wire Line
+	8450 8800 7650 8800
+Wire Wire Line
+	8450 8900 7650 8900
+Wire Wire Line
+	9700 8500 8950 8500
+Wire Wire Line
+	9750 8600 8950 8600
+Wire Wire Line
+	9750 8700 8950 8700
+Wire Wire Line
+	9750 8800 8950 8800
+Wire Wire Line
+	9750 8900 8950 8900
+$Comp
+L power:GND #PWR0110
+U 1 1 618199B0
+P 7700 8500
+F 0 "#PWR0110" H 7700 8250 50  0001 C CNN
+F 1 "GND" V 7700 8300 50  0000 C CNN
+F 2 "" H 7700 8500 50  0001 C CNN
+F 3 "" H 7700 8500 50  0001 C CNN
+	1    7700 8500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 61819FC1
+P 9700 8500
+F 0 "#PWR0111" H 9700 8350 50  0001 C CNN
+F 1 "+3V3" H 9715 8673 50  0000 C CNN
+F 2 "" H 9700 8500 50  0001 C CNN
+F 3 "" H 9700 8500 50  0001 C CNN
+	1    9700 8500
+	0    1    1    0   
+$EndComp
+Text Label 7650 8600 0    50   ~ 0
+~USER_PIN1_OUT_5V~
+Text Label 7650 8700 0    50   ~ 0
+~USER_PIN3~
+Text Label 9350 8600 0    50   ~ 0
+~USER_PIN2~
+Text Label 9350 8700 0    50   ~ 0
+~USER_PIN4~
+Text Label 9350 8800 0    50   ~ 0
+~USER_PIN6~
+Text Label 9350 8900 0    50   ~ 0
+~USER_PIN8~
+Text Label 7650 8800 0    50   ~ 0
+~USER_PIN5~
+Text Label 7650 8900 0    50   ~ 0
+~USER_PIN7~
+Text Notes 8500 8200 0    50   ~ 10
+User Pins
+Wire Wire Line
+	3600 6800 4400 6800
+Text Label 3600 6800 0    50   ~ 0
+~USER_PIN9~
+Wire Wire Line
+	3600 7900 4400 7900
+Text Label 3600 7900 0    50   ~ 0
+~USER_PIN10~
+Wire Wire Line
+	3600 8000 4400 8000
+Text Label 3600 8000 0    50   ~ 0
+~USER_PIN11~
+Wire Wire Line
+	3600 8100 4400 8100
+Text Label 3600 8100 0    50   ~ 0
+~USER_PIN12~
+NoConn ~ 4400 7800
+Wire Wire Line
+	9750 9000 8950 9000
+Text Label 9300 9000 0    50   ~ 0
+~USER_PIN10~
+Wire Wire Line
+	9750 9100 8950 9100
+Text Label 9300 9100 0    50   ~ 0
+~USER_PIN12~
+Wire Wire Line
+	8450 9000 7650 9000
+Text Label 7650 9000 0    50   ~ 0
+~USER_PIN9~
+Wire Wire Line
+	8450 9100 7650 9100
+Text Label 7650 9100 0    50   ~ 0
+~USER_PIN11~
+Wire Wire Line
+	8950 9200 9750 9200
+$Comp
+L power:+5V #PWR?
+U 1 1 61F37FE7
+P 9750 9200
+F 0 "#PWR?" H 9750 9050 50  0001 C CNN
+F 1 "+5V" V 9750 9350 50  0000 L CNN
+F 2 "" H 9750 9200 50  0001 C CNN
+F 3 "" H 9750 9200 50  0001 C CNN
+	1    9750 9200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 9200 8450 9200
+Text Label 7650 9200 0    50   ~ 0
+USB_VBUS
 $EndSCHEMATC

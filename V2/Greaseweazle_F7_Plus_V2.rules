@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 16517)
+    (start_pass_no 17057)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -166,7 +166,9 @@
     "Net-(C1-Pad2)" "Net-(J6-Pad1)" "/USB_DIN+" "/USB_DIN-" "/OSC_IN" "/OSC_OUT" "Net-(J9-Pad3)" "Net-(J9-Pad1)"
     "Net-(J10-Pad1)" /FB "Net-(U1-Pad5)" "/USB_D-" "/USB_D+" "/GND_for_U4" "Net-(U13-Pad2)" "Net-(U11-Pad2)"
     "Net-(U12-Pad2)" "Net-(U4-Pad19)" "Net-(U4-Pad13)" "Net-(R21-Pad2)" "/~DATA_RATE_SEL0_5V~" "/~MTYPE_ID0~" "/~MTYPE_ID1~" "/~DTYPE_ID0~"
-    "/~DTYPE_ID1~" "/~DATA_RATE_SEL1_5V~" "/~DATA_RATE_SEL0~" "/~DATA_RATE_SEL1~" "/~DISK_CHANGE~"
+    "/~DTYPE_ID1~" "/~DATA_RATE_SEL1_5V~" "/~DATA_RATE_SEL0~" "/~DATA_RATE_SEL1~" "/~DISK_CHANGE~" "/~USER_PIN8~" "/~USER_PIN7~" "/~USER_PIN6~"
+    "/~USER_PIN5~" "/~USER_PIN4~" "/~USER_PIN3~" "/~USER_PIN2~" "/~USER_PIN1_OUT_5V~" "/~USER_PIN1_OUT~" "/~USER_PIN12~" "/~USER_PIN11~"
+    "/~USER_PIN10~" "/~USER_PIN9~"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -188,7 +190,7 @@
     )
   )
   (class Power
-    GND +3V3 "/USB_VBUS"
+    +3V3 GND "/USB_VBUS"
     (clearance_class Power)
     (via_rule Power)
     (rule
