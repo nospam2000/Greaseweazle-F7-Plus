@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 17057)
+    (start_pass_no 15461)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -190,7 +190,7 @@
     )
   )
   (class Power
-    +3V3 GND "/USB_VBUS"
+    GND +3V3 "/USB_VBUS"
     (clearance_class Power)
     (via_rule Power)
     (rule
